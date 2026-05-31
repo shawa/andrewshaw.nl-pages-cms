@@ -1,0 +1,19 @@
+title: andrewshaw.nl
+description: Personal site
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gemfile
+  - .bundle
+  - vendor

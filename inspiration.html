@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inspiration — personal sites</title>
+  <meta name="description" content="A curated gallery of clean, considered personal websites — no gimmicks.">
+  <style>
+    :root {
+      --bg:        #050507;
+      --bg-2:      #0E0E12;
+      --fg:        #E8E4D5;
+      --fg-soft:   #B6B6C2;
+      --fg-faint:  #7A7A86;
+      --rule:      #2A2A35;
+      --magenta:   #E6007E;
+      --cyan:      #00D9FF;
+      --acid:      #CCFF00;
+      --link:      #00D9FF;
+      --visited:   #E6007E;
+      --content:   760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--fg);
+      background: var(--bg);
+      margin: 1.5em auto;
+      padding: 0 1em;
+      max-width: var(--content);
+    }
+
+    h1, h2, h3 {
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-style: italic;
+      margin: 1.4em 0 0.4em;
+    }
+
+    h1 { font-size: 2.2em; color: var(--magenta); margin-top: 0; }
+    h2 { font-size: 1.5em; color: var(--cyan); }
+    h3 { font-size: 1.2em; color: var(--acid); }
+
+    h2::before, h3::before {
+      content: "† ";
+      color: var(--magenta);
+      font-style: normal;
+    }
+
+    p { margin: 0 0 1em; }
+
+    a            { color: var(--link); }
+    a:visited    { color: var(--visited); }
+    a:hover      { color: var(--acid); }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: var(--magenta);
+      margin: 1.8em 0;
+    }
+
+    ::selection { background: var(--magenta); color: var(--fg); }
+
+    .intro {
+      color: var(--fg-soft);
+      font-style: italic;
+      margin-bottom: 2.4em;
+    }
+
+    .toc {
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      padding: 0.8em 0;
+      margin: 0 0 2.6em;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4em 1em;
+      font-size: 0.95em;
+    }
+    .toc li { margin: 0; }
+
+    .category {
+      margin: 2.6em 0 2.2em;
+      scroll-margin-top: 1em;
+    }
+
+    .category-note {
+      color: var(--fg-soft);
+      font-style: italic;
+      margin: -0.4em 0 1.2em;
+    }
+
+    .sites {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 1.4em;
+    }
+    .sites li { margin: 0; padding: 0; }
+
+    .site-name a {
+      font-weight: bold;
+      font-style: italic;
+      color: var(--cyan);
+      text-decoration: none;
+    }
+    .site-name a:hover { color: var(--acid); }
+    .site-name a:visited { color: var(--visited); }
+
+    .site-host {
+      color: var(--fg-faint);
+      font-size: 0.85em;
+      margin-left: 0.5em;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    .blurb { margin: 0.2em 0 0; }
+
+    footer {
+      margin-top: 4em;
+      padding-top: 1.2em;
+      border-top: 1px solid var(--rule);
+      color: var(--fg-faint);
+      font-size: 0.85em;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Inspiration</h1>
+  <p class="intro">A gallery of personal sites curated from ten parallel research passes — clean, considered, no gimmicks.</p>
+
+  <ul class="toc">
+    <li><a href="#designer">Designers</a></li>
+    <li><a href="#essayist">Essayists</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#engineer">Programmers</a></li>
+    <li><a href="#brutalist">Brutalist</a></li>
+    <li><a href="#garden">Gardens</a></li>
+    <li><a href="#academic">Academic</a></li>
+    <li><a href="#oldschool">Old-school</a></li>
+    <li><a href="#visual">Visual artists</a></li>
+    <li><a href="#indie">Indie gems</a></li>
+  </ul>
+
+  <section class="category" id="designer">
+    <h3>Designer &amp; design-engineer portfolios</h3>
+    <p class="category-note">Confident typography, intentional whitespace, tasteful motion.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://emilkowal.ski/" target="_blank" rel="noopener">Emil Kowalski</a><span class="site-host">emilkowal.ski</span></div>
+        <p class="blurb">Single-column, content-first — no hero, no nav chrome. Hover any project tile and you get a frame-perfect easing demo that doubles as a credential for his animation work.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://paco.me" target="_blank" rel="noopener">Paco Coursey</a><span class="site-host">paco.me</span></div>
+        <p class="blurb">Reads like a plain text file that happens to be beautifully kerned. Short intro, a Building list, a Writing list, a Now section, separated only by thin rules — the restraint forces you to read prose.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://uilabs.dev" target="_blank" rel="noopener">Mariana Castilho — UI Labs</a><span class="site-host">uilabs.dev</span></div>
+        <p class="blurb">Vertical scroll of self-contained interactive component vignettes on a near-white canvas. Each demo ships with its tech badge inline — portfolio and live spec sheet without ever feeling like Storybook.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://brianlovin.com" target="_blank" rel="noopener">Brian Lovin</a><span class="site-host">brianlovin.com</span></div>
+        <p class="blurb">Two-pane macOS-style layout: persistent left sidebar, right pane swaps without a full reload. Treats a personal site as a desktop app without skeuomorphic kitsch.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://jim-nielsen.com" target="_blank" rel="noopener">Jim Nielsen</a><span class="site-host">jim-nielsen.com</span></div>
+        <p class="blurb">Defiantly plain — high-contrast black on warm off-white, generous measure, metadata in small monospace. No motion. A study in how confident hierarchy and one good text size can carry an entire site.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="essayist">
+    <h3>Writers &amp; essayists</h3>
+    <p class="category-note">Sites designed to be read. Beautiful body type, sensible measure, almost no chrome.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://macwright.com/" target="_blank" rel="noopener">Tom MacWright</a><span class="site-host">macwright.com</span></div>
+        <p class="blurb">Inlined stylesheet, system sans, 640px column, line-height 1.6. Honest, native-feeling text with no webfont flicker. Reads like a well-kept logbook.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://aworkinglibrary.com/" target="_blank" rel="noopener">A Working Library — Mandy Brown</a><span class="site-host">aworkinglibrary.com</span></div>
+        <p class="blurb">Patient narrow column of serif body, italicised book titles and source attributions threading through every essay. Structured as a reading practice (Reading / Writing / Thinking), not a blog.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://craigmod.com/" target="_blank" rel="noopener">Craig Mod</a><span class="site-host">craigmod.com</span></div>
+        <p class="blurb">A book-designer's web page: humanist serif at a generous size, wide margins, dinkus dividers, figure captions in italic small-caps. Designed to be read on a tablet at arm's length.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://jsomers.net/" target="_blank" rel="noopener">James Somers</a><span class="site-host">jsomers.net</span></div>
+        <p class="blurb">Georgia, full stop. A long centred column, near-zero chrome (just a header and a chronological list), footnotes and inline links doing all the visual work. The archaic styling is the point.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://stephango.com/" target="_blank" rel="noopener">Steph Ango</a><span class="site-host">stephango.com</span></div>
+        <p class="blurb">Aggressively minimal monochrome, tag-based navigation instead of a feed. Short evergreen notes cross-linked like a wiki — embodies his stated principle: style is consistent constraint.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="typography">
+    <h3>Typography-first</h3>
+    <p class="category-note">Sites where the type choices are the entire design system.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://practicaltypography.com" target="_blank" rel="noopener">Matthew Butterick — Practical Typography</a><span class="site-host">practicaltypography.com</span></div>
+        <p class="blurb">Set in Butterick's own MB Type families with a live font-switcher (Heliotrope, Valkyrie, Century Supra, Triplicate). Strict 66-character measure, real small caps, hanging punctuation. The canonical example of the rules applied.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://robinrendle.com" target="_blank" rel="noopener">Robin Rendle</a><span class="site-host">robinrendle.com</span></div>
+        <p class="blurb">Custom-licensed MD IO and MD System UI from Mass-Driver, separated sans/title/mono tokens, and a notes/stories/newsletter split that mirrors how a writer actually thinks. Probably the most considered web type stack online.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://frankchimero.com" target="_blank" rel="noopener">Frank Chimero</a><span class="site-host">frankchimero.com</span></div>
+        <p class="blurb">Restrained sans for nav against a warm serif for prose, one accent colour, obvious 8pt vertical rhythm. Hierarchy is almost entirely typographic — leading, indent, a tight type scale.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://tonsky.me" target="_blank" rel="noopener">Tonsky — Nikita Prokopov</a><span class="site-host">tonsky.me</span></div>
+        <p class="blurb">Read-the-books type-nerd: tight measure, real fi/fl ligatures, hyphenation enabled, custom monospace (he ships Fira Code), unicode dinkus stars marking editor's picks. Functional, not decorative.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://kottke.org" target="_blank" rel="noopener">Jason Kottke — kottke.org</a><span class="site-host">kottke.org</span></div>
+        <p class="blurb">A study in long-form link-blog typography. A single readable column, italic source attributions, hierarchy built only from leading and indent. Has looked broadly the same since 1998 because the type was right the first time.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="engineer">
+    <h3>Programmer blogs</h3>
+    <p class="category-note">Information-dense but elegant. Confident type, no fluff.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://fasterthanli.me" target="_blank" rel="noopener">Amos Wenger — fasterthanli.me</a><span class="site-host">fasterthanli.me</span></div>
+        <p class="blurb">Dark theme with serif body and unusually careful syntax highlighting. Inline asides as conversational character cards are a signature — footnotes that live in the flow without breaking it.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://lucumr.pocoo.org" target="_blank" rel="noopener">Armin Ronacher — lucumr</a><span class="site-host">lucumr.pocoo.org</span></div>
+        <p class="blurb">Auto/light/dark mode done quietly. Single-column reading layout that trusts the type. Code blocks feel like part of the prose rather than embedded screenshots. No popups, no newsletter modal.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://matklad.github.io" target="_blank" rel="noopener">Alex Kladov — matklad</a><span class="site-host">matklad.github.io</span></div>
+        <p class="blurb">The most disciplined just-text blog of the bunch. Generous line-height, narrow measure, tiny top nav (About / Links / Blogroll) and nothing else. Unboxed code so Rust/Zig reads as part of the argument.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://www.hillelwayne.com" target="_blank" rel="noopener">Hillel Wayne</a><span class="site-host">hillelwayne.com</span></div>
+        <p class="blurb">Confident serif heads, sans body, a horizontal nav that says everything in five words. No sidebar, no related-posts grid — you get the post and a link to the next thing.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://ciechanow.ski" target="_blank" rel="noopener">Bartosz Ciechanowski</a><span class="site-host">ciechanow.ski</span></div>
+        <p class="blurb">Minimalist sans body with bespoke interactive diagrams inline. The visual is the explanation, the text gets out of the way.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="brutalist">
+    <h3>Brutalist but elegant</h3>
+    <p class="category-note">Raw HTML aesthetic, system fonts or careful monospace, almost no styling — but the structure carries it.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://danluu.com" target="_blank" rel="noopener">Dan Luu</a><span class="site-host">danluu.com</span></div>
+        <p class="blurb">Black serif on white, no header image, no nav chrome, posts listed by date. The absence of design signals confidence in the prose — and the prose earns it.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://wickstrom.tech" target="_blank" rel="noopener">Oskar Wickström</a><span class="site-host">wickstrom.tech</span></div>
+        <p class="blurb">Monospace throughout, ch-based column widths, ASCII rules between sections. Reads like a well-kept terminal buffer. He authored "The Monospace Web" — that's the design statement.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://www.benkuhn.net" target="_blank" rel="noopener">Ben Kuhn</a><span class="site-host">benkuhn.net</span></div>
+        <p class="blurb">Plain serif body, navigation as bracketed text links ([home] [say hi] [blogroll]), section headers as dashed underlines. A tidy plaintext README that happens to render in a browser.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://idlewords.com" target="_blank" rel="noopener">Maciej Cegłowski — Idle Words</a><span class="site-host">idlewords.com</span></div>
+        <p class="blurb">Narrow single column, serif body, a small toothfish in the corner as the only ornament. Shaped like an essay magazine, not a CMS theme.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://www.tedunangst.com/flak/" target="_blank" rel="noopener">Ted Unangst — flak</a><span class="site-host">tedunangst.com</span></div>
+        <p class="blurb">Default-ish serif, flat post list, no sidebar, no taxonomy, no avatar, no related-posts. The discipline is in what's missing — makes dense OpenBSD writing feel weightier.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="garden">
+    <h3>Digital gardens</h3>
+    <p class="category-note">Wiki-style, bidirectionally linked — but treated as a designed object, not a notes dump.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://maggieappleton.com/garden/" target="_blank" rel="noopener">Maggie Appleton</a><span class="site-host">maggieappleton.com</span></div>
+        <p class="blurb">Hand-drawn illustration and a Seedling / Budding / Evergreen growth badge on every note. Confidence and care become part of the visual grammar rather than buried metadata.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://gwern.net/" target="_blank" rel="noopener">Gwern Branwen</a><span class="site-host">gwern.net</span></div>
+        <p class="blurb">Custom sidenotes, hover-preview popups for every internal link, drop caps, per-essay confidence/importance ratings. The reader toolbar treats the page itself as configurable furniture.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://tomcritchlow.com/wiki/" target="_blank" rel="noopener">Tom Critchlow</a><span class="site-host">tomcritchlow.com</span></div>
+        <p class="blurb">A wild garden, loosely tended. The structure mimics a literal folder of folders — exposing the filing system as the interface. The deliberate roughness reads as a workshop you're allowed inside.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://notes.azlen.me/" target="_blank" rel="noopener">Azlen Elza</a><span class="site-host">notes.azlen.me</span></div>
+        <p class="blurb">Matuschak-style stacked sliding panels — drill sideways through linked notes without losing the previous one. Treats the screen as a desk of overlapping index cards.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://winnielim.org/" target="_blank" rel="noopener">Winnie Lim</a><span class="site-host">winnielim.org</span></div>
+        <p class="blurb">Notes, journal, library, poetry, and curated greatest-hits "playlists" sit side by side. Reads as several rooms in one house — a slow, lived-in space where threads accrete over years.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="academic">
+    <h3>Academic homepages</h3>
+    <p class="category-note">Researcher pages that escaped the Bootstrap 3 faculty-page fate.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://pascalmichaillat.org" target="_blank" rel="noopener">Pascal Michaillat</a><span class="site-host">pascalmichaillat.org</span></div>
+        <p class="blurb">Economist who designed his own Hugo template. Tiny horizontal text-link nav, no hero, papers as plain dated bibliographic entries. The unified visual system across his site, slides, CV, and papers is the real flex.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://anadodik.github.io" target="_blank" rel="noopener">Ana Dodik</a><span class="site-host">anadodik.github.io</span></div>
+        <p class="blurb">MIT graphics PhD. Restrained grayscale palette, card-based publications with rendered thumbnails from her actual research, consistent venue/year typography, uniform action chips (paper / video / bibtex).</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://kelvinguu.com" target="_blank" rel="noopener">Kelvin Guu</a><span class="site-host">kelvinguu.com</span></div>
+        <p class="blurb">Defiantly plain — text-only nav, a narrative bio that integrates accomplishments instead of listing them, publications with proper author asterisks and italicised venues. The confidence to leave it sparse.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://thesephist.com" target="_blank" rel="noopener">Linus Lee — thesephist</a><span class="site-host">thesephist.com</span></div>
+        <p class="blurb">Narrative-paragraph homepage instead of a CV dump. Talks listed as chronological inline entries. Reads like an essay rather than a profile — which matches the work.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="oldschool">
+    <h3>Old-school personal sites</h3>
+    <p class="category-note">Sites that feel like the web before the web got monetised — still standing.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://www.cl.cam.ac.uk/~rja14/" target="_blank" rel="noopener">Ross Anderson (Cambridge)</a><span class="site-host">cl.cam.ac.uk</span></div>
+        <p class="blurb">A tilde-URL, no CSS, hyperlinks as navigation, "new" markers next to recent papers, and a footnote boasting 0.07g of CO2 per pageview. A security professor's homepage that argued its politics by being lightweight.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://www.cs.utexas.edu/~EWD/" target="_blank" rel="noopener">E.W. Dijkstra Archive (UT Austin)</a><span class="site-host">cs.utexas.edu</span></div>
+        <p class="blurb">1,300+ scanned handwritten manuscripts indexed by integer. The whole site is a numbered filing cabinet exposed to the public web — navigation feels like browsing someone's actual desk drawers.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://www.cs.cmu.edu/~rwh/" target="_blank" rel="noopener">Robert Harper (CMU)</a><span class="site-host">cs.cmu.edu</span></div>
+        <p class="blurb">No sidebar, no nav menu, no images — just headings (Papers, Talks, Students, Honors) and a "last modified" stamp. Updated into 2026 but visually unchanged since ~2003. Proof you can run a 30-year career on one HTML file.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://wiki.xxiivv.com/site/home.html" target="_blank" rel="noopener">Devine Lu Linvega — XXIIVV</a><span class="site-host">wiki.xxiivv.com</span></div>
+        <p class="blurb">A hand-built personal wiki with its own constructed language, its own runtime (Uxn), and a permacomputing ethos. Webring badges, hand-drawn iconography, no third-party JS. A single person's lifelong Memex.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://pbat.ch/" target="_blank" rel="noopener">Paul Batchelor — pbat.ch</a><span class="site-host">pbat.ch</span></div>
+        <p class="blurb">"Teaches computers how to sing." Plain text, hyperlinks, a wiki, a webring badge. Fits in a glance and tells you exactly who the person is without a hero image or call-to-action.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="visual">
+    <h3>Photographers &amp; visual artists</h3>
+    <p class="category-note">Where the site design itself stays quiet so the work breathes.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://www.alecsoth.com" target="_blank" rel="noopener">Alec Soth</a><span class="site-host">alecsoth.com</span></div>
+        <p class="blurb">A text-first index page that treats the portfolio almost like a printed CV: project links in a single left-aligned column with press quotes flowing beneath. The work opens from a quiet table of contents rather than a hero image.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://www.rinkokawauchi.com" target="_blank" rel="noopener">Rinko Kawauchi</a><span class="site-host">rinkokawauchi.com</span></div>
+        <p class="blurb">Bilingual EN/JA horizontal nav and a single slow-paced image carousel as the entire homepage. The pacing — one frame at a time, generous margins — mirrors the breathing rhythm of her photobooks.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://maxsiedentopf.com" target="_blank" rel="noopener">Max Siedentopf</a><span class="site-host">maxsiedentopf.com</span></div>
+        <p class="blurb">Artist's name as both wordmark and section header, with a single category filter row above a uniform grid. The repeated typographic anchor creates rhythm across an enormous body of work without ever shouting.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://hassanrahim.com" target="_blank" rel="noopener">Hassan Rahim</a><span class="site-host">hassanrahim.com</span></div>
+        <p class="blurb">Not a portfolio — a numbered, vertically stacked text document with → and ↓ glyphs doing all the navigation. Reads like a printed colophon, deliberately rejecting scroll-jacked galleries.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://www.gregorhalenda.com" target="_blank" rel="noopener">Gregor Halenda</a><span class="site-host">gregorhalenda.com</span></div>
+        <p class="blurb">Five tight category labels over a single uniform image grid where every tile is the project cover. The decision to refuse a hero — every image is equal weight — is what makes it feel edited rather than dumped.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="category" id="indie">
+    <h3>Indie / found gems</h3>
+    <p class="category-note">Recent picks from the SiteInspire / Godly / Sidebar.io scene that earned their feature.</p>
+    <ul class="sites">
+      <li>
+        <div class="site-name"><a href="https://rauno.me" target="_blank" rel="noopener">Rauno Freiberg</a><span class="site-host">rauno.me</span></div>
+        <p class="blurb">A single column of plain text links with absurd amounts of breathing room — but each project link reveals a custom-built micro-interaction page (cmdk, Vaul). The craft hides behind the click.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://nan.fyi" target="_blank" rel="noopener">Nan Liu — nan.fyi</a><span class="site-host">nan.fyi</span></div>
+        <p class="blurb">A card grid that looks plain at thumbnail scale, but every post is an interactive explainer. The decision: let the index be boring on purpose so the article pages can be the surprise.</p>
+      </li>
+      <li>
+        <div class="site-name"><a href="https://solar.lowtechmagazine.com/" target="_blank" rel="noopener">Low-Tech Magazine (solar)</a><span class="site-host">solar.lowtechmagazine.com</span></div>
+        <p class="blurb">Honourable adjacent mention. Dithered images, a visible battery gauge in the header, occasional offline hours. A site whose layout is its argument.</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    Curated by ten parallel research passes. 47 sites across 10 categories.
+  </footer>
+
+</body>
+</html>
